@@ -47,4 +47,4 @@ const markup = (backpack) => {
 
 const main = document.createElement("main");
 main.innerHTML = markup(backpack);
-document.body.appendChild(main);
+document.body.appendChild(main); //here was one error because body is not created first to fix it we need to shift script tag to the bottom.
